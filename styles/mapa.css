@@ -1,0 +1,19 @@
+.mapa {
+  padding: 60px 20px;
+  background-color: var(--background-color2);
+  text-align: center;
+  border-bottom: solid 2px var(--yellow-color);
+}
+
+.mapa h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.mapa-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

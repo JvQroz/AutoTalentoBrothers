@@ -1,0 +1,83 @@
+.footer {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 40px 20px 20px;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 8px;
+}
+
+.footer-nav ul li a {
+  color: var(--yellow-color);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  /* Distância entre o texto e o sublinhado */
+}
+
+.footer-nav ul li a:hover {
+  color: var(--white-color);
+}
+
+.footer-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contato a {
+  color: var(--yellow-color);
+  text-decoration: none;
+}
+
+.footer-redes {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-redes a {
+  color: var(--yellow-color);
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+  will-change: transform;
+
+}
+
+.footer-redes a:hover {
+  transform: scale(1.1);
+  color: var(--white-color);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid var(--yellow-color);
+  padding-top: 15px;
+  font-size: 0.85rem;
+}

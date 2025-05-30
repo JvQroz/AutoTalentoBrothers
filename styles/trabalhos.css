@@ -1,0 +1,74 @@
+.trabalhos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: var(--black-color);
+
+  color: var(--white-color);
+}
+
+.trabalhos h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.container-carrossel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.carrossel {
+  flex: 0 0 350px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.faixa {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.faixa img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  aspect-ratio: 9 / 12;
+}
+
+.controle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.controle.anterior {
+  left: 10px;
+}
+
+.controle.proximo {
+  right: 10px;
+}
+
+.controle:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.controle:disabled {
+  pointer-events: none;
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+
+
+}
+
+:root {
+  --black-color: #000101;
+  --yellow-color: #ecb30d;
+  --red-color: #870203;
+  --white-color: #f3f2f3;
+}
+
+/* Oculta botão no desktop */
+.menu-toggle {
+  position: absolute;
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--white-color);
+  cursor: pointer;
+  left: 85%;
+}
+
+/* Layout mobile */
+@media (max-width: 768px) {
+
+  .hero {
+    height: 50vh;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.logo img {
+  width: 20px;
+}
+
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--black-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 90;
+    padding: 1rem 0;
+  }
+
+  .nav-list li {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
