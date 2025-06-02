@@ -86,7 +86,10 @@ header {
   }
 
   .logo img {
-    width: 15 0px;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 150px;
   }
 
   .nav-list {

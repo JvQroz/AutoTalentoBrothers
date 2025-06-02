@@ -1,5 +1,5 @@
 .sobre-nos {
-  background-color: var(--white-color);
+  background-color: var(--black-color);
   /* cor clara */
   color: var(--black-color);
   /* exto escuro */
@@ -19,7 +19,7 @@
 
 .sobre-nos h2 {
   font-size: 2.5rem;
-  color: var(--black-color);
+  color: var(--yellow-color);
   margin-bottom: 20px;
 }
 
@@ -27,4 +27,5 @@
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 15px;
+  color: white;
 }

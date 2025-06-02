@@ -6,7 +6,7 @@
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.7)),
-    url('../images/carrobrilhando.jpg');
+    url('/images/carrobrilhando.jpg');
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,6 +62,20 @@
   transform: scale(1.1);
 }
 
+.btn-agendar2 img {
+  position: fixed;
+  right: 5%;
+  z-index: 999;
+  top: 50%;
+  width: 80px;
+  transition: all .2s;
+  display: none;
+}
+
+.btn-agendar2 img:hover{
+  transform: scale(1.10);
+}
+
 @media (max-width: 768px) {
     .hero {
     height: 50vh;
@@ -73,5 +87,13 @@
 
   .hero p {
     font-size: 1rem;
+  }
+
+  .btn-agendar{
+    display: none;
+  }
+
+  .btn-agendar2 img{
+    display: block;
   }
 }
