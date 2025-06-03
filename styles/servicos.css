@@ -11,6 +11,11 @@
   color: var(--black-color);
 }
 
+.categoria{
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+
 .grid-servicos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -18,9 +23,10 @@
 }
 
 .card-servico {
+  margin-top: 20px;
   background: var(--white-color);
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
@@ -35,6 +41,12 @@
   color: var(--red-color);
   padding: 10px 20px;
   font-size: 1.5rem;
+  margin: 0;
+}
+
+.premium{
+  background-color: var(--yellow-color);
+  border-radius: 12px;
 }
 
 .card-servico-txt {
@@ -53,4 +65,75 @@
 .tempoevalor {
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+.trabalhos h2 {
+  margin-top: 60px;
+  font-size: 2rem;
+}
+
+.container-carrossel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.carrossel {
+  width: 350px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  border: solid 3px var(--black-color);
+}
+
+.faixa {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.faixa img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  aspect-ratio: 9 / 12;
+}
+
+.controle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.controle.anterior {
+  left: 10px;
+}
+
+.controle.proximo {
+  right: 10px;
+}
+
+.controle:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.controle:disabled {
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  
+  .carrossel{
+    width: 250px;
+  }
 }
